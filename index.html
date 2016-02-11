@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="1.portfolio.css"/>
 
 	<script></script>
 </head>
@@ -100,7 +100,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 proj-item item1">
+				<div class="col-md-4 proj-item item1">
 					<h3>News</h3>
 					<a href="http://codepen.io/SamAI-Software/live/qbKjZZ" target="_blank">
 						<div class="proj-img">
@@ -109,7 +109,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 proj-item item2">
+				<div class="col-md-4 proj-item item2">
 					<h3>Evil Pomodoro!</h3>
 					<a href="http://codepen.io/SamAI-Software/live/KVZoKV" target="_blank">
 						<div class="proj-img">
@@ -119,7 +119,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 proj-item item3">
+				<div class="col-md-4 proj-item item3">
 					<h3>Adaptive System</h3>
 					<a href="https://youtu.be/SWbtAPl30Nw?list=PL_FLPJUjm5An1TqvcP6SW-4EIYuYoEQRV" target="_blank">
 						<div class="proj-img">
@@ -137,9 +137,32 @@
 	<div class="contacts">
 		<a href="" name="contacts"></a>
 		<h2>Contacts</h2>
+		<div class="container">
+			<div class="contact-form">
+					<form action="http://formspree.io/samai.software@gmail.com" method="POST">
+				<div class="row">
+					    <label class="col-md-6 col-xs-12">
+						    <input type="text" placeholder="Name" id="name" name="name" required>
+					    </label>
+					    <label class="col-md-6 col-xs-12">
+						    <input type="email" placeholder="Email" id="email" name="_replyto" required>
+					    </label>
+					    <label class="col-md-12 col-xs-12">
+					 	   <textarea name="message" placeholder="Message Texts..." id="message" required></textarea>
+						</label>
+					    <label class="col-md-4 col-xs-12">
+						    <input type="submit" id="submit" value="Send">
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 </body>
