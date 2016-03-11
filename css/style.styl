@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 *
 	padding 0px
 	margin 0px
@@ -8,9 +10,12 @@ body, html
 	padding 0px
 	margin 0px
 	text-align center
-	background url('../pic/clouds2.jpg') no-repeat center center fixed
+	// background url('../pic/clouds2.jpg') no-repeat center center fixed
+	background-color #1E1E1E
 	background-size cover
 	z-index -10
+	// text-rendering: optimizeLegibility !important;
+	// -webkit-font-smoothing: antialiased !important;
 
 body
 	position relative
@@ -24,6 +29,7 @@ body
 	top 0
 	left 0
 	z-index 100
+	
 	.links
 		position relative
 		width auto
@@ -31,23 +37,26 @@ body
 		float right
 		padding 1% 0 0.5% 0
 		margin auto
-		box-shadow 0px 0px 1px 0px black
-		border-bottom-left-radius 15px
-		border-top-left-radius 15px
+		// box-shadow 0px 0px 1px 0px black
+		// border-bottom-left-radius 15px
+		// border-top-left-radius 15px
 		overflow hidden
 		opacity 0.85
+		
 		&:hover
 			opacity 1
+			
 		.backgr
 			position absolute
 			top 0
 			left 0
-			background-color #003ba1
+			// background-color #003ba1
 			content ""
 			width 100%
 			height 100%
 			opacity 0.4
 			z-index -1
+			
 		ul
 			li
 				list-style none
@@ -67,37 +76,45 @@ body
 
 .home
 	position relative
-	margin 9% auto 10%
+	margin 11% auto 10%
 	color white
 	width 50%
 	max-width 550px
-	border-radius 35px
+	// border-radius 35px
 	overflow hidden
-	box-shadow 0px 0px 1px 0px black
+	// box-shadow 0px 0px 1px 0px black
 	opacity 0.98
+	
 	.backgr
 		position absolute
 		top 0
 		left 0
 		width 100%
 		height 100%
-		background-image radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #0057ed 100%)
+		// background-image radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #0057ed 100%)
 		opacity 0.3
 		z-index -1
+		
 	.header
 		h1
 			color #ff9100
 			font-family 'Audiowide', verdana
 			text-shadow 2px 1px 2px black
 			z-index 10
+			
 	.titles
 		h3
+			display inline
 			margin 0
 			text-shadow 1px 1px 2px black
+			// font-weight bold
+			font-family 'Open Sans', verdana
+			
 	.social
-		margin 3% 0 0 0
-		border-top 3px solid #ff9100
-		background-color rgba(255,255,255,0.6)
+		margin 4% 0 0 0
+		padding-top 2%
+		border-top 2px solid #ff9100
+		// background-color rgba(255,255,255,0.6)
 		font-size 0.8em
 		ul
 			margin 0% 0 0 0
@@ -120,8 +137,8 @@ body
 
 .projects
 	position relative
-	margin 25% auto 0
-	background-color rgba(255,255,255,0.7)
+	margin 30% auto 0
+	background-color rgba(255,255,255,0.9)
 	min-height 855px
 	padding-top 4%
 	.container
@@ -214,7 +231,7 @@ body
 		width 16px
 
 .contacts
-	background url('../pic/clouds6.jpg') no-repeat center center fixed
+	// background url('../pic/clouds6.jpg') no-repeat center center fixed
 	height 855px
 	color white
 	margin 0px 0 0
@@ -284,9 +301,9 @@ body
 
 
 	
-		@media screen and (max-width: 770px)
-			.home
-				width 70%
+@media screen and (max-width: 770px)
+	.home
+		width 70%
 
 @media screen and (max-width: 770px)
 	.home
