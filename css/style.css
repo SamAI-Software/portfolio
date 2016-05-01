@@ -68,12 +68,17 @@ body {
   text-decoration: none;
   box-shadow: 0px 0px 2px 1px #fff;
 }
+.topAnchor:focus {
+  outline: none;
+  text-decoration: none;
+}
 .home {
   position: relative;
-  margin: 11% auto 10%;
+  margin: 22vh auto 10%;
   color: #fff;
   width: 50%;
   max-width: 550px;
+  height: 58vh;
   overflow: hidden;
   opacity: 0.98;
 }
@@ -130,12 +135,17 @@ body {
   position: absolute;
   left: 49.5%;
   top: 92vh;
+  color: rgba(255,255,255,0.5);
+}
+.arrow-down:hover {
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
 }
 .projects {
   position: relative;
-  margin: 30% auto 0;
+  margin: 0 auto 0;
   background-color: rgba(255,255,255,0.9);
-  min-height: 855px;
+  min-height: 115vh;
   padding-top: 4%;
 }
 .projects .container {
